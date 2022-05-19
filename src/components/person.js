@@ -5,13 +5,18 @@ export default class Person extends React.Component {
     return (
       <div className="input-container">
         <h2 className="section-title">Person</h2>
-        <input type="text" name="name" id="name" placeholder="insert name" />
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="insert name"
+          defaultValue={this.props.state.personName}
+        />
         <input
           type="text"
           name="lastname"
           id="lastname"
           placeholder="insert lastname"
-          defaultValue={this.props.state.personName}
         />
         <input
           type="text"

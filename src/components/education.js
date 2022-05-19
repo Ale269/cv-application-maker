@@ -27,7 +27,16 @@ export default class Education extends React.Component {
   render() {
     const components = [];
     for (let i = 0; i < this.state.count; i++) {
-      components.push(<InputComponents function={this.removeComponent} />);
+      components.push(
+        <InputComponents
+          function={this.removeComponent}
+          newStudyPath={this.props.state.studyPath[i]}
+          newInstituteName={this.props.state.instituteName[i]}
+          newStudyCity={this.props.state.studyCity[i]}
+          newStudyFromDate={this.props.state.studyFromDate[i]}
+          newStudyToDate={this.props.state.studyToDate[i]}
+        />
+      );
     }
     return (
       <div className="input-container">
@@ -50,30 +59,35 @@ class InputComponents extends React.Component {
           name="study-path-name"
           className="study-path-name"
           placeholder="Name of study path"
+          defaultValue={this.props.newStudyPath}
         />
         <input
           type="text"
           name="institute-name"
           className="institute-name"
           placeholder="Training institute name"
+          defaultValue={this.props.newInstituteName}
         />
         <input
           type="text"
           name="city"
           className="city"
           placeholder="insert city name"
+          defaultValue={this.props.newStudyCity}
         />
         <input
           type="text"
           name="from-date"
           className="from-date"
           placeholder="From"
+          defaultValue={this.props.newStudyFromDate}
         />
         <input
           type="text"
           name="to-date"
           className="to-date"
           placeholder="To"
+          defaultValue={this.props.newStudyToDate}
         />
         <button
           type="button"
