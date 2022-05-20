@@ -2,16 +2,16 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .title-container {
-  background-color: #fff;
+  background-color: rgb(243, 243, 243);
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 5px 10px rgb(223, 223, 223);
+  box-shadow: 0px 5px 10px rgb(201, 201, 201);
   margin-bottom: 50px;
 }
 
@@ -23,6 +23,7 @@
 
 .section-title {
   text-align: center;
+  font-weight: 300;
 }
 
 .input-container {
@@ -33,26 +34,129 @@
   flex-direction: column;
 }
 
-.input-container input, textarea, button {
-  margin: 20px; 
-  padding: 5px;
-}
-
-.input-container button {
-  margin: 5px 20px; 
+.input-container input,
+textarea {
+  margin: 20px;
   padding: 5px;
 }
 
 .add-btn {
-  background-color: #67E142;
-  border: 1px solid #000;
+  margin: 5px 20px;
+  padding: 10px;
+  background-color: #1f1f1f;
+  color: rgb(243, 243, 243);
+  border: none;
   border-radius: 2px;
   cursor: pointer;
 }
 
+.add-btn:hover {
+  background-color: #383838;
+}
+
 .remove-btn {
-  background-color: #E94843;
-  border: 1px solid #000;
+  margin: 5px 20px;
+  padding: 10px;
+  background-color: rgb(243, 243, 243);
+  color: #1f1f1f;
+  border: 2px solid #1f1f1f;
   border-radius: 2px;
   cursor: pointer;
+}
+
+.remove-btn:hover {
+  background-color: rgb(211, 211, 211);
+}
+
+.controller-btn-container {
+  margin: 0 auto;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.controller-btn-container button {
+  margin: 5px 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#generate {
+  background-color: #1f1f1f;
+  color: rgb(243, 243, 243);
+  border: none;
+  border-radius: 2px;
+}
+
+#generate:hover {
+  background-color: #383838;
+}
+
+#reset {
+  background-color: rgb(243, 243, 243);
+  color: #1f1f1f;
+  border: 2px solid #1f1f1f;
+  border-radius: 2px;
+}
+
+#reset:hover {
+  background-color: rgb(211, 211, 211);
+}
+
+.cv-block-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.name-profession {
+  background-color: #1f1f1f;
+  color: rgb(243, 243, 243);
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px 50px;
+}
+
+.name-profession h2 {
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.name-profession h3 {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.central-block {
+  display: flex;
+}
+
+.Personal-information-container {
+  width: 30%;
+  padding: 30px 0 20px 20px;
+  background-color: rgb(211, 211, 211);
+}
+
+.title-section {
+  color: #1f1f1f;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.small-section-title {
+  color: #1f1f1f;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.Personal-information-container p {
+  color: #1f1f1f;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 14px;
 }

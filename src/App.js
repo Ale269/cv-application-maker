@@ -5,6 +5,7 @@ import Person from "./components/person.js";
 import Education from "./components/education.js";
 import Experiences from "./components/experiences.js";
 import Controller from "./components/controller.js";
+import Builder from "./components/builder.js";
 
 class App extends React.Component {
   constructor(props) {
@@ -36,7 +37,7 @@ class App extends React.Component {
   generateState() {
     console.log(document.getElementById("name").value);
 
-    this.setState(() => {
+    this.setState((state) => {
       const newStudyPath = [];
       document.querySelectorAll(".study-path-name").forEach((element) => {
         newStudyPath.push(element.value);
@@ -117,6 +118,7 @@ class App extends React.Component {
         <Education state={this.state} />
         <Experiences state={this.state} />
         <Controller function={this.generateState} />
+        <Builder state={this.state} />
       </>
     );
   }
