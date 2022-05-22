@@ -6,7 +6,6 @@
 }
 
 .title-container {
-  background-color: rgb(243, 243, 243);
   height: 40px;
   display: flex;
   justify-content: center;
@@ -225,4 +224,58 @@ textarea {
   border-bottom: 1px solid #1f1f1f;
   margin: 0 20px;
   margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 830px) {
+  .cv-block-container {
+    margin: 20px;
+  }
+
+  .experiences-container h3 {
+    color: #1f1f1f;
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+
+  .experiences-container h5 {
+    color: #1f1f1f;
+    width: 100%;
+    font-weight: 500;
+    font-size: 10px;
+  }
+
+  .education-container h3 {
+    color: #1f1f1f;
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+
+  .education-container h5 {
+    color: #1f1f1f;
+    width: 100%;
+    font-weight: 500;
+    font-size: 10px;
+  }
+
+  .experiences-container .title-section {
+    font-size: 14px;
+  }
+
+  .education-container .title-section {
+    font-size: 14px;
+  }
+
+  .title-section {
+    font-size: 14px;
+  }
+
+  .Personal-information-container {
+    padding: 30px 5px 30px 5px;
+  }
+
+  .small-section-title {
+    color: #1f1f1f;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
 }

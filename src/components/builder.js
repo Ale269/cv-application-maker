@@ -1,10 +1,6 @@
 import React from "react";
 
 export default class Builder extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const educationBlocks = [];
 
@@ -33,7 +29,6 @@ export default class Builder extends React.Component {
         />
       );
     }
-    console.log(experiencesBlocks);
 
     return (
       <div className="cv-block-container">
@@ -73,9 +68,6 @@ export default class Builder extends React.Component {
 }
 
 class Education extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <div className="education-experience-block">
@@ -92,9 +84,6 @@ class Education extends React.Component {
 }
 
 class Experiences extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <div className="education-experience-block">
