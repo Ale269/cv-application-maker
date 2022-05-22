@@ -32,6 +32,7 @@ class App extends React.Component {
     };
 
     this.generateState = this.generateState.bind(this);
+    this.resetState = this.resetState.bind(this);
   }
 
   generateState() {
@@ -110,6 +111,28 @@ class App extends React.Component {
     });
   }
 
+  resetState() {
+    this.setState({
+      personName: "",
+      personLastName: "",
+      personTitle: "",
+      address: "",
+      mobile: "",
+      email: "",
+      description: "",
+      studyPath: [],
+      instituteName: [],
+      studyCity: [],
+      studyFromDate: [],
+      studyToDate: [],
+      companyName: [],
+      workPosition: [],
+      workCity: [],
+      workFromDate: [],
+      workToDate: [],
+    });
+  }
+
   render() {
     return (
       <>
@@ -117,7 +140,7 @@ class App extends React.Component {
         <Person state={this.state} />
         <Education state={this.state} />
         <Experiences state={this.state} />
-        <Controller function={this.generateState} />
+        <Controller generate={this.generateState} reset={this.resetState} />
         <Builder state={this.state} />
       </>
     );

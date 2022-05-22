@@ -7,10 +7,10 @@ export default class Controller extends React.Component {
   render() {
     return (
       <div className="controller-btn-container">
-        <button id="generate" type="button" onClick={this.props.function}>
+        <button id="generate" type="button" onClick={this.props.generate}>
           Generate
         </button>
-        <button id="reset" type="button">
+        <button id="reset" type="button" onClick={this.props.reset}>
           Reset
         </button>
       </div>

@@ -134,6 +134,8 @@ textarea {
 
 .central-block {
   display: flex;
+  border: 1px solid #1f1f1f;
+  min-height: 700px;
 }
 
 .Personal-information-container {
@@ -159,4 +161,68 @@ textarea {
   width: 100%;
   margin-bottom: 20px;
   font-size: 14px;
+}
+
+.education-experiences-container {
+  width: 70%;
+}
+
+.education-container {
+  padding: 30px 0px 20px 20px;
+}
+
+.education-container .title-section {
+  color: #1f1f1f;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.education-container h3 {
+  color: #1f1f1f;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.education-container h5 {
+  color: #1f1f1f;
+  width: 100%;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.experiences-container {
+  padding: 30px 0px 20px 20px;
+}
+
+.experiences-container .title-section {
+  color: #1f1f1f;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.experiences-container h3 {
+  color: #1f1f1f;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.experiences-container h5 {
+  color: #1f1f1f;
+  width: 100%;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.education-experience-block h5:last-of-type {
+  margin-bottom: 5px;
+}
+
+.education-experience-block h5:last-of-type {
+  margin-bottom: 30px;
+}
+
+.dividing-line {
+  border-bottom: 1px solid #1f1f1f;
+  margin: 0 20px;
+  margin-bottom: 30px;
 }
